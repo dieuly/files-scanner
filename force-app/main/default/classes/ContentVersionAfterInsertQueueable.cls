@@ -70,6 +70,7 @@ public with sharing class ContentVersionAfterInsertQueueable implements Queueabl
         }
     }
 
+    // invoke http request
     private static HttpResponse invokeScanUrls(String endPointUrl, String jsonMessageBody) {
         HttpRequest request = new HttpRequest();
         request.setMethod('POST');
